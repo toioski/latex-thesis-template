@@ -1,3 +1,4 @@
+*.fdb_latexmk
 *.aux
 *.glo
 *.idx
@@ -16,9 +17,13 @@
 *.ind
 *.lof
 *.lot
+*.lol
+*.fls
 *.maf
 *.mtc
 *.mtc1
 *.out
+*.lol
+*.fls
 *.synctex.gz
 _minted-index/
