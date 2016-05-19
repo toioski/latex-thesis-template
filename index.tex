@@ -1,0 +1,45 @@
+\documentclass[a4paper,11pt,oneside]{book}
+
+\setcounter{tocdepth}{4} % IMPOSTA LA PROFONDITÀ DEGLI INDICI NELLA TABELLA DEI CONTENUTI
+\setcounter{secnumdepth}{4} % IMPOSTA LA PROFONDITÀ DEGLI INDICI PER LE SEZIONI
+
+
+\usepackage{packages}
+\usepackage{frontespizio}
+\usepackage{directives}
+
+\counterwithout{figure}{chapter} % IMPOSTA LA NUMERAZIONE CONTINUA DELLE FIGURE, ALTRIMENTI VIENE FATTA PER CAPITOLI
+
+%\makeindex                                          %CREA INDICE ANALITICO
+
+
+%Document begin
+\begin{document}
+	\usemintedstyle{xcode} %IMPOSTA LO SCHEMA COLORI PER IL CODICE
+	\setminted{linenos,autogobble} %IMPOSTAZIONI FORMATTAZIONE CODICE
+	\pagenumbering{roman} %IMPOSTA NUMERAZIONE ROMANA FINO ALL'INTRODUZIONE
+	\afterpage{\cfoot{\thepage}} %METTE I NUMERI DI PAGINA IN FONDO AL FOOTER. NECESSARIO SE SI USA FANCYHDR
+	\frontespizio
+	\clearpage{\pagestyle{empty}\cleardoublepage}
+	\tableofcontents
+	\newpage
+	\listoffigures % INDICE DELLE FIGURE
+	\listoflistings % INDICE DEL CODICE
+	\newpage
+	\pagenumbering{arabic} %IMPOSTA NUMERAZIONE TRADIZIONALE A PARTIRE DALL'INTRODUZIONE
+	\pagebreak
+	\setlength{\parskip}{1em} % IMPOSTA QUANTO SPAZIO LASCIO UN INVIO
+	
+	%===========================
+	\input{"cap_0"}
+	%===========================
+	%===========================
+	\input{"appendici"}
+	%===========================
+	
+	%Bibliografia
+	\bibliographystyle{alpha}
+	\bibliography{bibliografia} %N.B. LA BIBLIOGRAFIA NON VIENE MOSTRATA FIN QUANDO NON VIENE RICHIAMATO
+								%	  ALMENO UNA VOLTA IL RIFERIMENTO NEL TESTO
+	\addcontentsline{toc}{chapter}{Bibliografia}
+\end{document}

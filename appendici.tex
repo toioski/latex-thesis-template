@@ -1,0 +1,11 @@
+% !TEX root=index.tex
+\appendix
+\chapter*{Appendici}
+\addcontentsline{toc}{chapter}{Appendici}
+\renewcommand{\thesection}{\Alph{section}}
+	\captionsetup{aboveskip=1pt, belowskip=30pt} % Impostazione margini dei caption per i listati
+
+	\section{La classe Insegnamento}\label{appendix:model}
+		\inputminted[autogobble, frame=lines, framesep=3mm]{swift}{code/Insegnamento.swift}
+		\captionof{listing}{La classe Insegnamento \label{code:class_insegnamento}}
+

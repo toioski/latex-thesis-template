@@ -1,0 +1,58 @@
+% *********************************************************
+% *               Comandi Personalizzati                  *
+% *********************************************************
+
+\renewcommand{\arraystretch}{1.5} % Redefining arraystretch
+\renewcommand{\copyright}{\textsuperscript{\textregistered}} % Comando per il simbolo del copyright
+\renewcommand{\listingscaption}{Codice} % Comando che sovrascrive il caption del listato del codice
+\renewcommand{\listoflistingscaption}{Elenco dei codici} % Comando che sovrascrive il titolo dell'elenco dei listati
+\renewcommand{\appendixpagename}{Appendici} % Sovrascrive il titolo della pagina delle appendici
+\renewcommand{\appendixtocname}{Appendici}
+
+
+% *********************************************************
+% *            Impostazioni estetiche generali            *
+% *********************************************************
+
+\bibliographystyle{ieeetr} % Definisce come deve essere il link alla bibliografia
+
+
+% Intestazioni/piè di pagina
+
+\pagestyle{fancy}															%OPZIONI PACCHETTO: fancy
+\fancyhf{} 																	    %LIBERA TUTTI GLI HEADER
+\lhead{\rightmark}																											
+\rhead{\bfseries\thepage} 														%RIGHT HEADER: num. pag. in grassetto
+\renewcommand{\headrulewidth}{0.4pt}										    %LINE ORIZ. INTESTAZIONE DI 0.4pt
+\renewcommand{\footrulewidth}{0pt}										        %LINE ORIZ. PIÈ PAG.: assente
+\setlength{\headheight}{15pt}													%ALTEZZA HEADER: 15pt
+\fancypagestyle{plain}{\fancyhead{}\renewcommand{\headrulewidth}{0pt}}		%NELLE PAG. VUOTE: non inserire niente
+
+\fancyhead[LE,RO]{\textbf{\thepage}} %Mostra il numero della pagina in grassetto; 
+%a sinistra nelle pagine pari e destra in quelle dispari.
+\fancyhead[RE,LO]{\nouppercase{\leftmark}} %Mostra l'upper-level (Capitolo) RE: right, even page.
+%\fancyhead[LO]{\nouppercase{\leftmark}} %Mostra l'upper-level (Capitolo) LO: left, odd page.
+
+
+% Link ipertestuali 
+
+\hypersetup{
+	pdftitle = {Titolo},										                        %TITOLO DEL PDF
+	pdfauthor= {Il tuo nome},				                                            %AUTORE/I
+	colorlinks=true,																	%ABILITA COLORE DEI COLLEGAMENTI
+	linkcolor=black,																		%COLLEGAMENTI DI COLORE: nero
+	bookmarksopen=true,																%ACROBAT: barra laterale segnalibri aperta
+	bookmarksopenlevel=0,															%ACROBAT: livello di sezione visibile
+	citecolor=black,															    %COLORE DELLE CITAZIONI: nere
+	urlcolor=black,																	%COLORE URL: nero	
+	%pdfsubject={???},
+	pdfkeywords= {Tesi, Informatica, Università di Milano, Polo di Crema}	%PAROLE CHIAVE DOCUMENTO
+} 
+
+
+% Paragraph settings
+\setlength{\parindent}{0em}
+
+% Example tag definitions
+\theoremstyle{definition}
+\newtheorem{example}{Esempio}[section]
