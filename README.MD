@@ -24,7 +24,7 @@ It's very lightweight and powerful at the same time. You won't go back once you 
 
 ### Common problems
 
-**The package Minted say to compile with --shell-escape** 
+**The package Minted say to compile with --shell-escape** <br>
 Go to `Preferences-> Package Settings-> LaTeXTools-> Settings - User` and inside `builder_settings` put this:
 
 ```
@@ -37,7 +37,7 @@ Go to `Preferences-> Package Settings-> LaTeXTools-> Settings - User` and inside
       	]
 ```      	
 
-**Skim don't get focused after building the document** 
+**Skim don't get focused after building the document** <br>
 Go to `Preferences-> Package Settings-> LaTeXTools-> Settings - User` and set `keep_focus` to `false`
 
 
