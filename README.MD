@@ -3,7 +3,7 @@
 ##About
 This is the LaTeX template I created and used for my Bachelor's degree thesis in Computer Science & Automation engineer. It's very simple and clean, but I think it would be right for the most of the students. Feel free to use if you like it :)
 
-##Usage (for beginners)
+##Usage
 The environment I recommend to use (with OSX) to write in LateX is the following:
 
 * Sublime Text 3 
@@ -15,10 +15,12 @@ It's very lightweight and powerful at the same time. You won't go back once you 
 ### Setup
 1. Install a LaTex distribution (I suggest [MacTeX](http://tug.org/mactex/) for OS X)
 2. Install [Sublime Text 3](https://www.sublimetext.com/)
-3. Install [Sublime Text Package Control](http://wbond.net/sublime_packages/package_control), a package manager that make simpler to install plugins for the editor
+3. Install [Sublime Text Package Control](http://wbond.net/sublime_packages/package_control), a package manager that make simpler to install plugins
 4. Install [LaTeXTools](https://github.com/SublimeText/LaTeXTools). If you installed Package Control just click `CMD+SHIFT+P`, type `Install Package` and search for `LaTeXTools`
 5. Install [Skim](http://skim-app.sourceforge.net/). Once installed go to `Preferences -> Sync` and set `Preset` to `Sublime Text` 
 6. Build the document with `CMD+B` and you're done!
+
+**TIP** If you want an epic theme for Sublime Text just install [Material Theme](http://equinusocio.github.io/material-theme/) by [Mattia Astorino](https://github.com/equinusocio)
 
 
 ##License
