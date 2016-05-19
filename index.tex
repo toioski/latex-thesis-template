@@ -5,8 +5,8 @@
 
 
 \usepackage{packages}
-\usepackage{frontespizio}
-\usepackage{directives}
+\usepackage{frontispiece}
+\usepackage{style}
 
 \counterwithout{figure}{chapter} % IMPOSTA LA NUMERAZIONE CONTINUA DELLE FIGURE, ALTRIMENTI VIENE FATTA PER CAPITOLI
 
@@ -31,15 +31,15 @@
 	\setlength{\parskip}{1em} % IMPOSTA QUANTO SPAZIO LASCIO UN INVIO
 	
 	%===========================
-	\input{"cap_0"}
+	\input{"tex/introduction"}
 	%===========================
 	%===========================
-	\input{"appendici"}
+	\input{"tex/appendix"}
 	%===========================
 	
 	%Bibliografia
 	\bibliographystyle{alpha}
-	\bibliography{bibliografia} %N.B. LA BIBLIOGRAFIA NON VIENE MOSTRATA FIN QUANDO NON VIENE RICHIAMATO
+	\bibliography{bibliography} %N.B. LA BIBLIOGRAFIA NON VIENE MOSTRATA FIN QUANDO NON VIENE RICHIAMATO
 								%	  ALMENO UNA VOLTA IL RIFERIMENTO NEL TESTO
 	\addcontentsline{toc}{chapter}{Bibliografia}
 \end{document}
