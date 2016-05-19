@@ -20,7 +20,25 @@ It's very lightweight and powerful at the same time. You won't go back once you 
 5. Install [Skim](http://skim-app.sourceforge.net/). Once installed go to `Preferences -> Sync` and set `Preset` to `Sublime Text` 
 6. Build the document with `CMD+B` and you're done!
 
-**TIP** If you want an epic theme for Sublime Text just install [Material Theme](http://equinusocio.github.io/material-theme/) by [Mattia Astorino](https://github.com/equinusocio)
+**TIP:** If you want an epic theme for Sublime Text just install [Material Theme](http://equinusocio.github.io/material-theme/) by [Mattia Astorino](https://github.com/equinusocio)
+
+### Common problems
+
+**The package Minted say to compile with --shell-escape** 
+Go to `Preferences-> Package Settings-> LaTeXTools-> Settings - User` and inside `builder_settings` put this:
+
+```
+"command": [
+            "latexmk",
+            "-cd", "-e",
+            "$pdflatex = '%E  -shell-escape -interaction=nonstopmode -synctex=1 %S %O'",
+            "-f",
+            "-pdf"
+      	]
+```      	
+
+**Skim don't get focused after building the document** 
+Go to `Preferences-> Package Settings-> LaTeXTools-> Settings - User` and set `keep_focus` to `false`
 
 
 ##License
