@@ -41,5 +41,5 @@ Go to `Preferences-> Package Settings-> LaTeXTools-> Settings - User` and inside
 Go to `Preferences-> Package Settings-> LaTeXTools-> Settings - User` and set `keep_focus` to `false`
 
 
-##License
+## License
 LateX Thesis Template is released under the GNU V3.0 license. See LICENSE for details.
