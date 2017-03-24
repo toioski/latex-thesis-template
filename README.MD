@@ -16,7 +16,7 @@ It's very lightweight and powerful at the same time. You won't go back once you 
 1. Install a LaTex distribution (I suggest [MacTeX](http://tug.org/mactex/) for OS X)
 2. Install [Sublime Text 3](https://www.sublimetext.com/)
 3. Install [Sublime Text Package Control](http://wbond.net/sublime_packages/package_control), a package manager that make simpler to install plugins
-4. Install [LaTeXTools](https://github.com/SublimeText/LaTeXTools). If you installed Package Control just click `CMD+SHIFT+P`, type `Install Package` and search for `LaTeXTools`
+4. Install [LaTeXTools](https://github.com/SublimeText/LaTeXTools). If you installed Package Control just click <kbd>CMD</kbd>+<kbd>SHIFT</kbd>+<kbd>P</kbd>, type `Install Package` and search for `LaTeXTools`
 5. Install [Skim](http://skim-app.sourceforge.net/). Once installed go to `Preferences -> Sync` and set `Preset` to `Sublime Text` 
 6. Build the document with `CMD+B` and you're done!
 
