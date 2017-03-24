@@ -24,7 +24,7 @@ It's very lightweight and powerful at the same time. You won't go back once you 
 
 ### Common problems
 
-**The package Minted say to compile with --shell-escape** <br>
+#### The package Minted say to compile with --shell-escape
 Go to `Preferences-> Package Settings-> LaTeXTools-> Settings - User` and inside `builder_settings` put this:
 
 ```
@@ -37,7 +37,13 @@ Go to `Preferences-> Package Settings-> LaTeXTools-> Settings - User` and inside
       	]
 ```      	
 
-**Skim don't get focused after building the document** <br>
+#### You must have 'pygmentize' installed to use this package
+1. Check if you have installed *pygmentize* (Python package) launching `which pygmentize` on the Terminal
+2. If the command returns a path, then you have already installed *pygmentize*. You only have to make sure that this path is included under the voice `texpath` inside the LaTeXTools config file in `Preferences-> Package Settings-> LaTeXTools-> Settings - User`
+3. If the command doesn't return a path, then you have to install first *pygmentize* and then to go back to point 2. To install pygmentize just open the terminal and launch `sudo easy_install Pygments`. N.B. you cannot use `brew` because python has is own dependecies manager which is `easy_install` 
+
+
+#### Skim don't get focused after building the document
 Go to `Preferences-> Package Settings-> LaTeXTools-> Settings - User` and set `keep_focus` to `false`
 
 
