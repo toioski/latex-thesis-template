@@ -46,6 +46,8 @@ Go to `Preferences-> Package Settings-> LaTeXTools-> Settings - User` and inside
 #### Skim don't get focused after building the document
 Go to `Preferences-> Package Settings-> LaTeXTools-> Settings - User` and set `keep_focus` to `false`
 
+#### Other building problems
+To help debugging the errors make sure to set `display_log` to `true` under `builder_settings` in `Preferences-> Package Settings-> LaTeXTools-> Settings - User`
 
 ## License
 LateX Thesis Template is released under the GNU V3.0 license. See LICENSE for details.
