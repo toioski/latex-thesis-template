@@ -1,9 +1,9 @@
 ![LaTeX Thesis Template by toioski](docs/banner.jpg)
 
-##About
+## About
 This is the LaTeX template I created and used for my Bachelor's degree thesis in Computer Science & Automation engineer. It's very simple and clean, but I think it would be right for the most of the students. Feel free to use if you like it :)
 
-##Usage
+## Usage
 The environment I recommend to use (with OSX) to write in LateX is the following:
 
 * Sublime Text 3 
