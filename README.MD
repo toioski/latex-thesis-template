@@ -18,7 +18,7 @@ It's very lightweight and powerful at the same time. You won't go back once you 
 3. Install [Sublime Text Package Control](http://wbond.net/sublime_packages/package_control), a package manager that make simpler to install plugins
 4. Install [LaTeXTools](https://github.com/SublimeText/LaTeXTools). If you installed Package Control just click <kbd>CMD</kbd>+<kbd>SHIFT</kbd>+<kbd>P</kbd>, type `Install Package` and search for `LaTeXTools`
 5. Install [Skim](http://skim-app.sourceforge.net/). Once installed go to `Preferences -> Sync` and set `Preset` to `Sublime Text` 
-6. Build the document with `CMD+B` and you're done!
+6. Build the document with <kbd>CMD</kbd>+<kbd>B</kbd> and you're done!
 
 **TIP:** If you want an epic theme for Sublime Text just install [Material Theme](http://equinusocio.github.io/material-theme/) by [Mattia Astorino](https://github.com/equinusocio)
 
